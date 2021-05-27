@@ -21,7 +21,9 @@ const UseRefComponent = () => {
         }}>
         State Count (Clicking will rerender): {value}
       </button>
-      <button onClick={handleReset}>Reset</button>
+      <button onClick={handleReset}>
+        Reset (resets ref <em>and</em> state)
+      </button>
       <hr />
     </>
   );
