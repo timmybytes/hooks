@@ -1,5 +1,5 @@
 <h1 align='center'>
-  <img src='./public/logo512.png' alt='React logo' />
+  <img src='./public/logo512.png' alt='React logo' width='200' />
   <br />
   hooks
 </h1>
