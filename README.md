@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+<h1 align='center'>
+  <img src='./public/logo512.png' alt='React logo' />
+  <br />
+  hooks
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <strong>React Hooks explained in simple examples</strong>
+</div>
 
-## Available Scripts
+<p align="center">
+  <sub>Built with ❤︎ by
+  <a href="https://timmybytes.com">Timothy Merritt</a>
+</p>
 
-In the project directory, you can run:
+This is a collection of examples illustrating how
+[React Hooks](https://reactjs.org/docs/hooks-intro.html) work, bootstrapped from
+a default `create-react-app` project.
 
-### `yarn start`
+The [`hooks`](./src/hooks) directory in `src` contains a JavaScript file for
+each of the 10 types of Hooks React makes available. Each Hook is a
+self-contained component (with the exception of Hooks with greater scope, e.g.
+`useContext`) which I've attempted to make as simple as possible in illustrating
+state changes, ref values, etc., with very basic UI examples.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can see the resulting site [here](https://timmybytes.github.io/hooks),
+though it is **currently still a work in progress**.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Development
 
-### `yarn test`
+To use locally, clone the repo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+git clone https://github.com/timmybytes/hooks.git
+```
 
-### `yarn build`
+Open directory and install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+cd hooks/
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To start the development environment:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm run start
+```
 
-### `yarn eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT License](./LICENSE.md).
