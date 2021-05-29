@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import HookInfo from '../HookInfo';
 
-const UseEffectComponent = () => {
+export default function UseEffectComponent() {
   /* Accesses the Component Lifecycle methods:
       componentDidMount: initialized
       componentDidUpdate: state updated
@@ -13,16 +14,15 @@ const UseEffectComponent = () => {
     setAlerted(true);
     return () => {
       alert('Destroyed! (useEffect)');
+      setAlerted(!alerted);
     };
-  }, []);
+  }, [alerted]);
 
   return (
-    <>
-      <h2>useEffect</h2>
+    <HookInfo
+      name='useEffect'
+      description='The useEffect Hook accepts a function that contains imperative, possibly effectful (e.g. side effects) code.'>
       {alerted && <p>Alerted!</p>}
-      <hr />
-    </>
+    </HookInfo>
   );
-};
-
-export default UseEffectComponent;
+}

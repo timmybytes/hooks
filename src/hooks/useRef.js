@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
+import HookInfo from '../HookInfo';
 
-const UseRefComponent = () => {
+export default function UseRefComponent() {
   // Create mutable object to persist between rerenders
   const count = useRef(0);
   const [value, setValue] = useState(0);
@@ -10,23 +11,22 @@ const UseRefComponent = () => {
     setValue(0);
   };
   return (
-    <>
-      <h2>useRef</h2>
+    <HookInfo
+      name='useRef'
+      description='The useRef Hook returns a mutable ref object'>
+      (Clicking won't rerender):
       <button onClick={() => count.current++}>
-        Ref Count (Clicking won't rerender): {count.current}
+        Ref Count: {count.current}
       </button>
+      (Clicking will rerender):
       <button
         onClick={() => {
           setValue(value + 1);
         }}>
-        State Count (Clicking will rerender): {value}
+        State Count: {value}
       </button>
-      <button onClick={handleReset}>
-        Reset (resets ref <em>and</em> state)
-      </button>
-      <hr />
-    </>
+      (Reset ref <em>and</em> state)
+      <button onClick={handleReset}>Reset</button>
+    </HookInfo>
   );
-};
-
-export default UseRefComponent;
+}

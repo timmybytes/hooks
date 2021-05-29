@@ -1,12 +1,11 @@
 import React, { useReducer } from 'react';
+import HookInfo from '../HookInfo';
 
 const UseReducerComponent = () => {
   //
   return (
-    <>
-      <h2>useReducer</h2>
-      <hr />
-    </>
+      <HookInfo name='useReducer' description='The useReducer Hook...'>
+      </HookInfo>
   );
 };
 

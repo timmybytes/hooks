@@ -1,26 +1,23 @@
-import React, { useContext, createContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
+import HookInfo from '../HookInfo';
 
-const ExampleContext = createContext('a default--but optional--context value');
+export const ExampleContext = createContext('initial context');
 
-export const UseContextComponent = () => {
-  // Context: share or scope values/state throughout application
+export const UseContextProvider = ({ children }) => {
+  const context = useContext(ExampleContext);
+
   return (
-    <ExampleContext.Provider>
-      <h2>useContext</h2>
-      <ChildComponent />
-      <hr />
+    <ExampleContext.Provider value={context}>
+      {children}
     </ExampleContext.Provider>
   );
 };
 
-const ChildComponent = () => {
-  const valueFromContext = useContext(ExampleContext);
-  const [currentValue, setCurrentValue] = useState(valueFromContext);
+export const UseContextComponent = () => {
   return (
-    <>
-      <p>{currentValue || 'No value detected'}</p>
-      <button>Change</button>
-    </>
+    <HookInfo
+      name='useContext'
+      description='The useContext Hook allows you to subscribe to React context without introducing nesting or prop-drilling'></HookInfo>
   );
 };
 
