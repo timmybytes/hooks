@@ -12,7 +12,7 @@ export default function UseStateComponent() {
   return (
     <HookInfo
       name='useState'
-      description='The useState Hook manages state between rerenders'>
+      description={'The useState Hook manages state between rerenders.'}>
       <p>Click to add 1</p>
       <button onClick={() => setCount(count => count + 1)}>
         Count: {count}
@@ -24,6 +24,7 @@ export default function UseStateComponent() {
         Reset
       </button>
       <ChildComponent onChange={handleHundred} />
+      <p>The useState Hook can also be used for more complex tasks.</p>
     </HookInfo>
   );
 }
@@ -59,4 +60,8 @@ function ChildComponent({ onChange }) {
       <button onClick={handleChange}>Click to add 100!</button>
     </div>
   );
+}
+
+export function complexState() {
+  //
 }

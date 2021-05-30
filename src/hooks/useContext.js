@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext } from 'react';
 import HookInfo from '../HookInfo';
 
 export const ExampleContext = createContext('initial context');
