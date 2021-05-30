@@ -1,13 +1,9 @@
 import React, { useImperativeHandle } from 'react';
+import HookInfo from './HookInfo';
 
 const UseImperativeHandleComponent = () => {
   //
-  return (
-    <>
-      <h2>useImperativeHandle</h2>
-      <hr />
-    </>
-  );
+  return <HookInfo name='useImperativeHandle' />;
 };
 
 export default UseImperativeHandleComponent;

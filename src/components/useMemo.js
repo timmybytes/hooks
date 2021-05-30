@@ -1,13 +1,9 @@
 import React, { useMemo } from 'react';
+import HookInfo from './HookInfo';
 
 const UseMemoComponent = () => {
   //
-  return (
-    <>
-      <h2>useMemo</h2>
-      <hr />
-    </>
-  );
+  return <HookInfo name='useMemo' />;
 };
 
 export default UseMemoComponent;

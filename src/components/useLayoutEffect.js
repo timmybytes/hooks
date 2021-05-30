@@ -1,13 +1,9 @@
 import React, { useLayoutEffect } from 'react';
+import HookInfo from './HookInfo';
 
 const UseLayoutEffectComponent = () => {
   //
-  return (
-    <>
-      <h2>useLayoutEffect</h2>
-      <hr />
-    </>
-  );
+  return <HookInfo name='useLayoutEffect' />;
 };
 
 export default UseLayoutEffectComponent;

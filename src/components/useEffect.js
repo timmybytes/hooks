@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import HookInfo from '../HookInfo';
+import HookInfo from './HookInfo';
 
 export default function UseEffectComponent() {
   /* Accesses the Component Lifecycle methods:
@@ -10,13 +10,13 @@ export default function UseEffectComponent() {
   const [alerted, setAlerted] = useState(false);
 
   useEffect(() => {
-    alert('A side effect! (useEffect)');
-    setAlerted(true);
-    return () => {
-      alert('Destroyed! (useEffect)');
-      setAlerted(!alerted);
-    };
-  }, [alerted]);
+    // alert('A side effect! (useEffect)');
+    // setAlerted(true);
+    // return () => {
+    //   alert('Destroyed! (useEffect)');
+    //   setAlerted(!alerted);
+    // };
+  }, []);
 
   return (
     <HookInfo

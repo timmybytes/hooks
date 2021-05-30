@@ -2,19 +2,18 @@ import React from 'react';
 
 export default function HookInfo({ name, description, children }) {
   return (
-    <div>
-      <h2 className='hook-name'>{name}</h2>
+    <section>
+      <h2>{name}</h2>
       <div className='hook-container'>
-        <div className='left-column'>
+        <div className='column'>
           <p className='column-label'>Description</p>
-          <p>{description}</p>
-        </div>
-        <div className='right-column'>
+          <p>{description || `The ${name} hook`}</p>
           <p className='column-label'>Example</p>
-          <div className='right-column__content'>{children}</div>
+          <div className='column__content'>{children}</div>
+          {!children && <p>Coming soon...</p>}
         </div>
       </div>
       <hr />
-    </div>
+    </section>
   );
 }

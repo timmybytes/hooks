@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react';
+import HookInfo from './HookInfo';
 
 const UseCallbackComponent = () => {
   //
   return (
     <>
-      <h2>useCallback</h2>
-      <hr />
+      <HookInfo name='useCallback' />
     </>
   );
 };
