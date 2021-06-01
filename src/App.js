@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import UseStateComponent from './components/useState';
 import UseEffectComponent from './components/useEffect';
 import UseRefComponent from './components/useRef';
