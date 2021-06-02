@@ -35,3 +35,10 @@ button {
     transform: translate(-2px, -2px);
   }
 }
+
+input {
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid black;
+  padding: 5px;
+}

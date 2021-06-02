@@ -134,12 +134,20 @@
 .use-ref__example {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px;
   width: 100%;
 }
 .use-ref__example p,
 button {
   flex-basis: 50%;
+}
+
+.use-ref__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* UseContextComponent */
