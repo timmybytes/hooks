@@ -1,4 +1,3 @@
-import React, { useLayoutEffect } from 'react';
 import HookInfo from './HookInfo';
 
 const UseLayoutEffectComponent = () => {

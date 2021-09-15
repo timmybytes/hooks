@@ -1,4 +1,3 @@
-import React, { useDebug } from 'react';
 import HookInfo from './HookInfo';
 
 const UseDebugValueComponent = () => {

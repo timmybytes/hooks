@@ -16,6 +16,7 @@ export default function UseEffectComponent() {
     //   alert('Destroyed! (useEffect)');
     //   setAlerted(!alerted);
     // };
+    setAlerted(true);
   }, []);
 
   return (
